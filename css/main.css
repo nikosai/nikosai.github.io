@@ -1,0 +1,160 @@
+/* common */
+h1,h2,h3,h4,h5,h6 {
+  font-family:  "Rounded Mplus 1c", sans-serif;
+  font-weight: 300;
+  line-height: 1.2;
+  margin-bottom: 15px;
+}
+
+a {
+  outline: none;
+}
+
+p {
+  font-size: 0.8em;
+}
+
+.svg-inline--fa {
+  margin-right: 3px;
+}
+
+.tag-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  margin:0;
+  padding:0;
+}
+
+.tag-wrap>* {
+  border-radius: 5px;
+  border: 1.5px solid gray;
+  color: gray;
+  background-color: rgba(255, 255, 255, 0.9);
+  font-size: 0.7em;
+  font-weight: 500;
+  padding: 3px;
+  margin: 0;
+  margin-right: 8px;
+  margin-top: 5px;
+  list-style-type: none!important;
+}
+
+.tag-wrap.links>*:hover{
+  text-decoration: none;
+  background-color: rgba(224, 224, 224, 0.9);
+  color: gray;
+}
+
+.lectures {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* article */
+article {
+  display: flex;
+	flex-wrap: nowrap;
+	align-items: flex-start;
+	justify-content: flex-start;
+	margin-top: 25px;
+	margin-bottom: 0px;
+  margin-left: 10px;
+  width: 230px;
+}
+
+article .enum {
+	font-family: 'Copse', serif;
+	background: rgba(45, 142, 221, 0.75);
+	font-size: 20px;
+	width: 2em;
+	height: 2em;
+	line-height: 2em;
+	text-align: center;
+	color: white;
+	margin-right: 7px;
+	transform: rotate(-15deg);
+	border-radius: 100%;
+	flex-shrink: 0;
+}
+
+article h4, article p {
+  margin: 0;
+}
+
+article h4 {
+  margin-bottom: 5px;
+}
+
+article p {
+  margin-bottom: 2px;
+}
+
+article .title{
+	margin-right: 10px;
+	margin-bottom: 5px;
+}
+
+/* body */
+
+body,html {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  background: url("../images/back.jpg") no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: 'mgenplus-p-w', 'Noto Sans CJK JP', '源ノ角ゴシック', 'Source Han Sans', '源真ゴシック', 'GenShinGothic', 'M+ 2c', 'Mgen+ 2c', 'Hiragino Sans', 'ヒラギノ角ゴシック', 'ヒラギノ角ゴ Pro W3' ,'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', 'GenShinGothic-w', sans-serif;
+}
+
+#wrapper {
+  min-height: 100%;
+  padding-top: 60px;
+}
+
+section>.container {
+  background-color: rgba(255, 255, 255, 0.85);
+  border-radius: 5px;
+  max-width: 95%;
+  padding-bottom: 20px;
+}
+
+section+section {
+  /* border-top: 3px ridge rgba(128, 128, 128, 0.5); */
+  margin-top:-40px;
+  padding-top:60px;
+}
+
+/* one: about */
+#one ul {
+  padding: 0;
+  padding-left: 10px;
+  position: relative;
+}
+
+#one>div>ul {
+  padding-left: 10px;
+}
+
+#one>div>ul>li {
+  color: #2d8fdd;
+  border-left: solid 3px #2d8fdd;/*左側の線*/
+  background: #2d8edd20;/*背景色*/
+  margin-bottom: 5px;
+  font-size: 90%;
+ 	line-height: 1.5;
+  	padding: 0.5em;
+  list-style-type: none!important;
+}
+
+/* Footer */
+footer {
+  margin-top: 15px;
+  margin-bottom: 10px;
+  text-align: center;
+  font-family:  "Rounded Mplus 1c", sans-serif;
+  font-weight: 700;
+  color: white;
+  filter: drop-shadow(0px 0px 10px rgba(0,0,0,.8));
+}
