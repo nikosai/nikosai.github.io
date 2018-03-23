@@ -5,209 +5,210 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="icon" href="images/avatar.png">
-		<script defer src="/static/fontawesome/fontawesome-all.js"></script>
+		<script defer src="js/fontawesome-all.min.js"></script>
 		<link href="https://fonts.googleapis.com/css?family=Copse" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/tamaina/The-Japanese-Web-Fonts/v6.0.0/css/JPWF-Addons.css"/> <!-- JpWF Addons -->
 		<link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/tamaina/The-Japanese-Web-Fonts/v6.0.0/css/GenJpFont-X.css"/> <!-- JpWF GenShin -->
 		<link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/tamaina/The-Japanese-Web-Fonts/v6.0.0/css/MgenP-X.css"/> <!-- JpWF Mgen+ -->
 		<link href="css/bootstrap.min.css" rel="stylesheet"/>
+		<link href="https://fonts.googleapis.com/earlyaccess/roundedmplus1c.css" rel="stylesheet" />
 		<link rel="stylesheet" href="css/bootstrap-theme.min.css"/>
 		<link rel="stylesheet" href="css/main.css"/>
 	</head>
-	<body>
+	<body id="top" data-spy="scroll" data-target="#navbar">
 		<!-- Header -->
-		<section id="header">
-			<header>
-				<span class="image avatar"><img src="images/nikosai.jpg" alt="" /></span>
-				<h1 id="logo"><a href="#">Nikosai</a></h1>
-				<p>Undergradate Student</p>
-			</header>
-			<nav id="nav">
-				<ul>
-					<li><a href="#one" class="active">About</a></li>
-					<li><a href="#two">Lecture Notes</a></li>
-					<li><a href="#three">Musical Grammar</a></li>
-					<li><a href="#four">Links</a></li>
-				</ul>
+		<div id="navbar">
+			<nav class="navbar navbar-default navbar-fixed-top">
+				<div class="container">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbarMenu">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a class="navbar-brand linkInThePage" href="#top">
+							Nikosai.ml
+						</a>
+					</div>
+				
+					<div class="collapse navbar-collapse" id="navbarMenu">
+						<ul class="nav navbar-nav">
+							<li><a class="linkInThePage" href="#two">Lecture Notes</a></li>
+							<li><a class="linkInThePage" href="#three">Musical Grammar</a></li>
+							<li><a class="linkInThePage" href="#four">Links</a></li>
+						</ul>
+						<!-- <p class="navbar-text navbar-right">
+							Undergradate Student.
+						</p> -->
+					</div>
+				</div>
 			</nav>
-			<footer>
-				<ul class="icons">
-					<li><a href="https://twitter.com/nikosai2531" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-					<li><a href="https://github.com/nikosai" class="icon fa-github"><span class="label">Github</span></a></li>
-					<!--
-					<li><a href="" class="icon fa-envelope"><span class="label">Email</span></a></li>
-					-->
-				</ul>
-			</footer>
-		</section>
+		</div>
+		
 		<!-- Wrapper -->
 		<div id="wrapper">
-			<!-- Main -->
-			<div id="main">
-				<!-- One -->
-				<section id="one">
-					<div class="container">
-						<header class="major">
-							<h2>Welcome to Nikosai.ml!</h2>
-							<p>興味だけは色々あります。</p>
-						</header>
-						<ul>
-							<li>（離散）数学
-								<ul>
-									<li>計算機モデル（オートマトン・チューリングマシン）</li>
-									<li>形式言語</li>
-									<li>λ計算</li>
-									<li>（公理的）集合論</li>
-									<li>（数理）論理学</li>
-								</ul>
-							</li>
-							<li>プログラミング
-								<ul>
-									<li>C/C++, Java</li>
-									<li>HTML/CSS/JS, Node.js</li>
-									<li>OCaml</li>
-									<li>Visual Basic</li>
-								</ul>
-							</li>
-							<li>音楽
-								<ul>
-									<li>T.Ravenscroft</li>
-									<li>J.S.Bach</li>
-									<li>F.Mendelssohn</li>
-									<li>L.v.Beethoven</li>
-								</ul>
-							</li>
-							<li>校正（校閲）</li>
-						</ul>
-					</div>
-				</section>
-
-				<!-- Two -->
-				<section id="two">
-					<div class="container">
-						<h3>ニコサイ先生の講義ノートシリーズ</h3>
-						<p>いくつかの（離散）数学分野について、私が作成した講義ノートを掲載する予定です。</p>
-						<p>これらの講義ノートは、「コンピュータ・サイエンスの目線から」数学を考えるものです。</p>
-						<p>なお、私の解説は直観的な理解に重点を置いているため、数学的な厳密性は欠く場合があります。</p>
-						<ul class="feature-icons">
-							<li class="nk-lambda">型のないλ計算（予定）</li>
-							<li class="fa-check-square-o">型付きλ計算（予定）</li>
-							<li class="fa-lightbulb-o">数理論理学入門（予定）</li>
-							<li class="fa-coffee">集合論入門（予定）</li>
-							<li class="fa-calculator">計算機モデルと形式言語（予定）</li>
-							<li class="fa-terminal">OCaml入門（予定）</li>
-						</ul>
-					</div>
-				</section>
-
-				<!-- Three -->
-				<section id="three">
-					<div class="container">
-						<h3>楽典和声講座</h3>
-						<p>合唱初心者を対象に、楽典を解説します。</p>
-						<p>「楽典“和声”講座」と銘打ちましたが、実際のところは機能和声の説明まで行けていません……。</p>
-						<p>あと、一部の参考音源などへのリンクは準備中です（<a href="https://github.com/nikosai/nikosai.github.io/tree/master/pdf/gakuten">GitHubリポジトリ</a>には置いてあります）。</p>
-						<article class="nk-wrap">
-							<div class="nk-enum">01</div>
-							<div class="nk-inner">
-								<div class="nk-title">
-									<h4>楽譜基礎</h4>
-									<p>楽譜の読み方・拍子とリズム</p>
-								</div>
-								<div class="nk-buttons">
-									<a href="pdf/gakuten/01/slide.pdf" class="button alt small">講義資料</a>
-									<a href="pdf/gakuten/01/quiz.pdf" class="button alt small">演習問題</a>
-									<a href="pdf/gakuten/01/ans.pdf" class="button alt small">解答</a>
-								</div>
-							</div>
-						</article>
-						<article class="nk-wrap">
-							<div class="nk-enum">02</div>
-							<div class="nk-inner">
-								<div class="nk-title">
-									<h4>音の呼び方</h4>
-									<p>日独伊三国音名</p>
-								</div>
-								<div class="nk-buttons">
-									<a href="pdf/gakuten/02/slide.pdf" class="button alt small">講義資料</a>
-									<a href="pdf/gakuten/02/quiz.pdf" class="button alt small">演習問題</a>
-									<a href="pdf/gakuten/02/ans.pdf" class="button alt small">解答</a>
-								</div>
-							</div>
-						</article>
-						<article class="nk-wrap">
-							<div class="nk-enum">03</div>
-							<div class="nk-inner">
-								<div class="nk-title">
-									<h4>音階（スケール）</h4>
-									<p>スケールが変わると雰囲気が変わる</p>
-								</div>
-								<div class="nk-buttons">
-									<a href="pdf/gakuten/03/slide.pdf" class="button alt small">講義資料</a>
-									<a href="pdf/gakuten/03/quiz.pdf" class="button alt small">演習問題</a>
-									<a href="pdf/gakuten/03/ans.pdf" class="button alt small">解答</a>
-								</div>
-							</div>
-						</article>
-						<article class="nk-wrap">
-							<div class="nk-enum">04</div>
-							<div class="nk-inner">
-								<div class="nk-title">
-									<h4>音程</h4>
-									<p>音の幅が響きを決める！</p>
-								</div>
-								<div class="nk-buttons">
-									<a href="pdf/gakuten/04/slide.pdf" class="button alt small">講義資料</a>
-									<a href="pdf/gakuten/04/quiz.pdf" class="button alt small">演習問題</a>
-									<a href="pdf/gakuten/04/ans.pdf" class="button alt small">解答</a>
-								</div>
-							</div>
-						</article>
-						<article class="nk-wrap">
-							<div class="nk-enum">05</div>
-							<div class="nk-inner">
-								<div class="nk-title">
-									<h4>調と移動ド</h4>
-									<p>音程をスライドしてみよう</p>
-								</div>
-								<div class="nk-buttons">
-									<a href="pdf/gakuten/05/slide.pdf" class="button alt small">講義資料</a>
-									<a href="pdf/gakuten/05/quiz.pdf" class="button alt small">演習問題</a>
-									<a href="pdf/gakuten/05/ans.pdf" class="button alt small">解答</a>
-								</div>
-							</div>
-						</article>
-					</div>
-				</section>
-
-				<!-- Four -->
-				<section id="four">
-					<div class="container">
-						<h3>リンク集</h3>
-						<p>きっとそのうち増えます。</p>
-						<div class="links">
-							<a href="https://twitter.com/nikosai2531" class="button special"><i class="fa fa-twitter"></i>Twitter</a>
-							<a href="https://github.com/nikosai" class="button special"><i class="fa fa-github"></i>GitHub</a>
-							<a href="https://peing.net/nikosai2531" class="button special"><i class="fa fa-question-circle"></i>Peing（質問箱）</a>
-							<a href="http://nikosai.hateblo.jp/" class="button special"><i class="fa fa-rss"></i>HatenaBlog</a>
-						</div>
-					</div>
-				</section>
-			</div>
-
-			<!-- Footer -->
-			<section id="footer">
+			<!-- One -->
+			<section id="one">
 				<div class="container">
-					<ul class="copyright">
-						<li>&copy; Nikosai. All rights reserved.</li>
+					<header class="major">
+						<h2>Welcome to Nikosai.ml!</h2>
+						<p>興味だけは色々あります。</p>
+					</header>
+					<ul>
+						<li>（離散）数学
+							<div class="tag-wrap">
+								<div>計算機モデル（オートマトン・チューリングマシン）</div>
+								<div>形式言語</div>
+								<div>λ計算</div>
+								<div>（公理的）集合論</div>
+								<div>（数理）論理学</div>
+							</div>
+						</li>
+						<li>プログラミング
+							<div class="tag-wrap">
+								<div>C/C++, Java</div>
+								<div>HTML/CSS/JS, Node.js</div>
+								<div>OCaml</div>
+								<div>Visual Basic</div>
+							</div>
+						</li>
+						<li>音楽
+							<div class="tag-wrap">
+								<div>T.Ravenscroft</div>
+								<div>J.S.Bach</div>
+								<div>F.Mendelssohn</div>
+								<div>L.v.Beethoven</div>
+							</div>
+						</li>
+						<li>校正（校閲）</li>
 					</ul>
 				</div>
 			</section>
+
+			<!-- Two -->
+			<section id="two">
+				<div class="container">
+					<h3>ニコサイ先生の講義ノートシリーズ</h3>
+					<p>いくつかの（離散）数学分野について、私が作成した講義ノートを掲載する予定です。</p>
+					<p>これらの講義ノートは、「コンピュータ・サイエンスの目線から」数学を考えるものです。</p>
+					<p>なお、私の解説は直観的な理解に重点を置いているため、数学的な厳密性は欠く場合があります。</p>
+					<ul class="tag-wrap">
+						<li class="nk-lambda">型のないλ計算（予定）</li>
+						<li class="fa-check-square-o">型付きλ計算（予定）</li>
+						<li class="fa-lightbulb-o">数理論理学入門（予定）</li>
+						<li class="fa-coffee">集合論入門（予定）</li>
+						<li class="fa-calculator">計算機モデルと形式言語（予定）</li>
+						<li class="fa-terminal">OCaml入門（予定）</li>
+					</ul>
+				</div>
+			</section>
+
+			<!-- Three -->
+			<section id="three">
+				<div class="container">
+					<h3>楽典和声講座</h3>
+					<p>合唱初心者を対象に、楽典を解説します。</p>
+					<p>「楽典“和声”講座」と銘打ちましたが、実際のところは機能和声の説明まで行けていません……。</p>
+					<p>あと、一部の参考音源などへのリンクは準備中です（<a href="https://github.com/nikosai/nikosai.github.io/tree/master/pdf/gakuten">GitHubリポジトリ</a>には置いてあります）。</p>
+					<div class="lectures">
+						<article>
+							<div class="enum">01</div>
+							<div>
+								<h4>楽譜基礎</h4>
+								<p>楽譜の読み方・拍子とリズム</p>
+								<div class="tag-wrap links">
+									<a href="pdf/gakuten/01/slide.pdf">講義資料</a>
+									<a href="pdf/gakuten/01/quiz.pdf">演習問題</a>
+									<a href="pdf/gakuten/01/ans.pdf">解答</a>
+								</div>
+							</div>
+						</article>
+						<article>
+							<div class="enum">02</div>
+							<div>
+								<h4>音の呼び方</h4>
+								<p>日独伊三国音名</p>
+								<div class="tag-wrap links">
+									<a href="pdf/gakuten/02/slide.pdf">講義資料</a>
+									<a href="pdf/gakuten/02/quiz.pdf">演習問題</a>
+									<a href="pdf/gakuten/02/ans.pdf">解答</a>
+								</div>
+							</div>
+						</article>
+						<article>
+							<div class="enum">03</div>
+							<div>
+								<h4>音階（スケール）</h4>
+								<p>スケールが変わると雰囲気が変わる</p>
+								<div class="tag-wrap links">
+									<a href="pdf/gakuten/03/slide.pdf">講義資料</a>
+									<a href="pdf/gakuten/03/quiz.pdf">演習問題</a>
+									<a href="pdf/gakuten/03/ans.pdf">解答</a>
+								</div>
+							</div>
+						</article>
+						<article>
+							<div class="enum">04</div>
+							<div>
+								<h4>音程</h4>
+								<p>音の幅が響きを決める！</p>
+								<div class="tag-wrap links">
+									<a href="pdf/gakuten/04/slide.pdf">講義資料</a>
+									<a href="pdf/gakuten/04/quiz.pdf">演習問題</a>
+									<a href="pdf/gakuten/04/ans.pdf">解答</a>
+								</div>
+							</div>
+						</article>
+						<article>
+							<div class="enum">05</div>
+							<div>
+								<h4>調と移動ド</h4>
+								<p>音程をスライドしてみよう</p>
+								<div class="tag-wrap links">
+									<a href="pdf/gakuten/05/slide.pdf">講義資料</a>
+									<a href="pdf/gakuten/05/quiz.pdf">演習問題</a>
+									<a href="pdf/gakuten/05/ans.pdf">解答</a>
+								</div>
+							</div>
+						</article>
+					</div>
+				</div>
+			</section>
+
+			<!-- Four -->
+			<section id="four">
+				<div class="container">
+					<h3>リンク集</h3>
+					<p>きっとそのうち増えます。</p>
+					<div class="tag-wrap links">
+						<a href="https://twitter.com/nikosai2531"><i class="fab fa-twitter"></i></i>Twitter</a>
+						<a href="https://github.com/nikosai"><i class="fab fa-github"></i>GitHub</a>
+						<a href="https://peing.net/nikosai2531"><i class="fas fa-question"></i>Peing（質問箱）</a>
+						<a href="http://nikosai.hateblo.jp/"><i class="fas fa-rss"></i>HatenaBlog</a>
+					</div>
+				</div>
+			</section>
 		</div>
+		<footer class="container">
+			<p>&copy; 2018 Nikosai. All rights reserved.</p>
+		</footer>
 
 		<!-- Scripts -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script src="js/animatescroll/animatescroll.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
 		<script src="js/main.js"></script>
+		<script>
+			$(document).ready(function(){
+				$('.linkInThePage').click( function(){
+					var hrefValue = jQuery(this).attr('href');
+					$(hrefValue).animatescroll();
+				});
+				$(".navbar-nav li a").click(function(event) {
+				$(".navbar-collapse").collapse('hide');
+				});
+			});
+		</script>
 	</body>
 </html>
