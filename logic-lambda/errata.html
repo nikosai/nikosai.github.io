@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<title>「数理論理学とラムダ計算の世界」正誤表 - Nikosai.ml</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="icon" href="../images/avatar.png">
+		<script defer src="../js/fontawesome-all.min.js"></script>
+		<link href="https://fonts.googleapis.com/css?family=Copse" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/tamaina/The-Japanese-Web-Fonts/v6.0.0/css/JPWF-Addons.css"/> <!-- JpWF Addons -->
+		<link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/tamaina/The-Japanese-Web-Fonts/v6.0.0/css/GenJpFont-X.css"/> <!-- JpWF GenShin -->
+		<link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/tamaina/The-Japanese-Web-Fonts/v6.0.0/css/MgenP-X.css"/> <!-- JpWF Mgen+ -->
+		<link href="../css/bootstrap.min.css" rel="stylesheet"/>
+		<link href="https://fonts.googleapis.com/earlyaccess/roundedmplus1c.css" rel="stylesheet" />
+		<link rel="stylesheet" href="../css/bootstrap-theme.min.css"/>
+		<link rel="stylesheet" href="../css/main.css"/>
+	</head>
+	<body id="top" data-spy="scroll" data-target="#navbar">
+		<!-- Header -->
+		<div id="navbar">
+			<nav class="navbar navbar-default navbar-fixed-top">
+				<div class="container">
+					<div class="navbar-header">
+						<!-- <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbarMenu">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button> -->
+						<a class="navbar-brand linkInThePage" href="../">
+							Nikosai.ml
+						</a>
+					</div>
+
+					<!-- <div class="collapse navbar-collapse" id="navbarMenu">
+						<ul class="nav navbar-nav">
+							<li><a class="linkInThePage" href="#lectureNotes">Lecture Notes</a></li>
+							<li><a class="linkInThePage" href="#musicalGrammar">Musical Grammar</a></li>
+							<li><a class="linkInThePage" href="#otherProducts">Other Products</a></li>
+							<li><a class="linkInThePage" href="#links">Links</a></li>
+						</ul>
+					</div> -->
+				</div>
+			</nav>
+		</div>
+
+		<!-- Wrapper -->
+		<div id="wrapper">
+			<!-- About -->
+			<section id="errata">
+				<div class="container">
+          <h3>「数理論理学とラムダ計算の世界」正誤表</h3>
+					<ul>
+						<li>p.23 脚注*81, 「〜のに対し、」→「〜のに対し、一階述語論理では変数の値（つまり付値）を動かしたときに論理式の真偽がどうなるかを考えている。」（Thanks <a href="//twitter.com/zha5x9">@zha5x9</a>!）</li>
+					</ul>
+				</div>
+			</section>
+
+			<!-- Links -->
+			<section id="links">
+				<div class="container">
+					<h3>お問い合わせ</h3>
+					<p>その他、内容にご質問等あれば、以下までお問い合わせください。</p>
+					<div class="tag-wrap links">
+						<a href="https://twitter.com/nikosai2531"><i class="fab fa-twitter"></i></i>Twitter</a>
+						<a href="https://peing.net/nikosai2531"><i class="fas fa-question"></i>Peing（質問箱）</a>
+					</div>
+				</div>
+			</section>
+		</div>
+		<footer class="container">
+			<p>&copy; 2018 Nikosai. All rights reserved.</p>
+		</footer>
+
+		<!-- Scripts -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script src="../js/animatescroll/animatescroll.min.js"></script>
+		<script src="../js/bootstrap.min.js"></script>
+		<script>
+			$(document).ready(function(){
+				$('.linkInThePage').click( function(){
+					var hrefValue = jQuery(this).attr('href');
+					$(hrefValue).animatescroll();
+				});
+				$(".navbar-nav li a").click(function(event) {
+				$(".navbar-collapse").collapse('hide');
+				});
+			});
+		</script>
+	</body>
+</html>
